@@ -2,7 +2,7 @@
 
 Welcome to **Movies Hub**, a fully-featured movie discovery and review platform built with the MERN stack.
 
-## 🚀 Features
+## Features
 
 - **Full-Stack Architecture:** Built entirely on the MERN stack (MongoDB, Express.js, React, Node.js).
 - **Advanced Search & Filtering:** Instantly search for movies by title or genre, and filter by release year, top-rated, newest arrivals, or random selections.
