@@ -3,7 +3,6 @@ import { useFetchGenresQuery } from "../../redux/api/genre";
 import MovieCard from "./MovieCard";
 import { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import banner from "../../assets/banner.jpg";
 import { setMoviesFilter, setFilteredMovies, setMovieYears, setUniqueYears } from "../../redux/features/movies/moviesSlice";
 
 const AllMovies = () => {
@@ -74,7 +73,7 @@ const AllMovies = () => {
       <section>
         <div
           className="relative h-[50rem] w-screen mb-10 flex items-center justify-center bg-cover bg-center"
-          style={{ backgroundImage: `url(${banner})` }}
+          style={{ backgroundImage: `url('/banner.jpg')` }}
         >
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black" />
 
