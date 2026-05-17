@@ -15,9 +15,15 @@ import uploadRoutes from "./routes/uploadRoutes.js";
 dotenv.config();
 connectDB();
 
+import cors from "cors";
+
 const app = express();
 
 // middlewares
+app.use(cors({
+  origin: ["http://localhost:5173", process.env.FRONTEND_URL],
+  credentials: true
+}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
